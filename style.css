@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.side-bar, button {
+    background-color: #1992d4;
+    color: white;
+}
+
+.project-window, .display-pic, .small-pic {
+    background-color: #e2e8f0;
+}
+
+.project-window .project {
+    background-color: #fff;
+    border-left: 2px solid #f0b429;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 5fr 5fr;
+}
+
+.side-bar {
+    grid-row: 1 / 5;
+}
+
+.top-bar {
+    grid-column: 2 / 4;
+}
+
+.status-bar {
+    grid-column: 2 / 4;
+}
+
+.project-window {
+    grid-row: 3 / 5;
+}
