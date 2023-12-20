@@ -84,12 +84,31 @@ button {
     align-items: center;
 }
 
+.search-bar {
+    margin-right: 1em;
+    width: 50%;
+}
+
+.search-bar input {
+    width: 100%;
+    background-color: #e2e8f0;
+    border: solid 1px;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 0.5em;
+}
+
 .top-bar .account {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 18px;
 }
+
+.top-bar .account .small-name {
+    align-self: center;
+}
+
 
 .status-bar {
     grid-column: 2 / 4;
@@ -119,4 +138,72 @@ ul {
 
 .project-window {
     grid-row: 3 / 5;
+}
+
+.project-window,
+.announcement-window,
+.trending-window {
+    display: grid;
+    grid-template-rows: 2em 1fr;
+}
+
+.project-window h3,
+.announcement-window h3,
+.trending-window h3 {
+    margin: 0.5em;
+    height: 1em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+.project {
+    padding: 0.5em;
+}
+
+.announcement-grid,
+.trending-grid {
+    background-color: #fff;
+    display: grid;
+    gap: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.announcement {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #e2e8f0;
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.account .small-pic {
+    grid-row: 1 / 3;
+    max-height: 21px;
+    max-width: 40px;
+}
+
+.account .small-name,
+.account .small-title {
+    padding: 0 9px;
+}
+
+.account .small-name {
+    align-self: end;
+}
+
+.account .small-title {
+    align-self: start;
+    font-size: 14px;
 }
